@@ -1,116 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
-    <title>automobile</title>
-    <link type="text/css" href="css/style.css" rel="stylesheet">
-    <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>automobile</title>
+  <link type="text/css" href="css/style.css" rel="stylesheet">
+  <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 <div class="container">
-    <div class="row">
-        <div class="col-md-4 " align="right">
-            <button id="btn-cars" class="btn btn-success"> Cars</button>
-            <hr>
-        </div>
-        <div class="col-md-8">
-            <button id="btn-motors" class="btn btn-danger">Motors</button>
-            <hr>
-        </div>
+  <div class="row">
+    <div class="col-md-6 col-xs-6" align="right">
+      <button id="btn-cars" class="btn btn-success"> Cars</button>
     </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="panel panel-success" style="width: 100%">
-            </div>
-            <div class="panel-heading">
-            Cars
-            </div>
-            <div class="panel-body">
-                <ul>
-                    <li>labels:</li>
-                    <li>Audi</li>
-                    <li>ford</li>
-                    <li>Mercedes</li>
-                    <li>...</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div id="myCarousel1" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel1" data-slide-to="1"></li>
-                    <li data-target="#myCarousel1" data-slide-to="2"></li>
-                </ol>
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="image/ford.jpeg" alt="Ford" style="width:100%;">
-                    </div>
-
-                    <div class="item">
-                        <img src="image/images.jpeg" alt="audi" style="width:100%;">
-                    </div>
-
-                    <div class="item">
-                        <img src="image/mercedes.jpeg" alt="Mercedes" style="width:100%;">
-                    </div>
-
-
-                    <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#myCarousel1" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div id="myCarousel2" class="carousel slide" data-ride="carousel" hidden>
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel2" data-slide-to="1"></li>
-                    <li data-target="#myCarousel2" data-slide-to="2"></li>
-                </ol>
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="image/honda.jpg" alt="honda" style="width:100%;">
-                    </div>
-
-                    <div class="item">
-                        <img src="image/ducati.jpg" alt="ducati" style="width:100%;">
-                    </div>
-
-                    <div class="item">
-                        <img src="image/aprilia.jpg" alt="aprilia" style="width:100%;">
-                    </div>
-
-
-                    <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#myCarousel2" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>
-        </div>
+    <div class="col-md-6 col-xs-6">
+      <button id="btn-motors" class="btn btn-danger">Motors</button>
     </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-md-4">
+      <div id="panel-cars" class="panel panel-success" style="width: 100%">
+        <div class="panel-heading">
+          Cars
+        </div>
+        <div class="panel-body">
+          <h3>Marques :</h3>
+          <ul>
+            <li>Audi</li>
+            <li>Ford</li>
+            <li>Mercedes</li>
+          </ul>
+        </div>
+      </div>
+      <div id="panel-motors" class="panel panel-danger" style="width: 100%" hidden>
+        <div class="panel-heading">
+          Motors
+        </div>
+        <div class="panel-body">
+          <h3>Marques :</h3>
+          <ul>
+            <li>Honda</li>
+            <li>Ducati</li>
+            <li>Aprilia</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel1" data-slide-to="1"></li>
+          <li data-target="#myCarousel1" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="image/ford.jpeg" alt="Ford" style="width:100%;">
+          </div>
+
+          <div class="item">
+            <img src="image/images.jpeg" alt="audi" style="width:100%;">
+          </div>
+
+          <div class="item">
+            <img src="image/mercedes.jpeg" alt="Mercedes" style="width:100%;">
+          </div>
+
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel1" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div id="myCarousel2" class="carousel slide" data-ride="carousel" hidden>
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel2" data-slide-to="1"></li>
+          <li data-target="#myCarousel2" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="image/honda.jpg" alt="honda" style="width:100%;">
+          </div>
+
+          <div class="item">
+            <img src="image/ducati.jpg" alt="ducati" style="width:100%;">
+          </div>
+
+          <div class="item">
+            <img src="image/aprilia.jpg" alt="aprilia" style="width:100%;">
+          </div>
+
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
